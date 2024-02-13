@@ -6,6 +6,5 @@ const logout = document.querySelector("#logout");
 
 logout.addEventListener("click", async () => {
     await signOut(auth);
-    showMessage("Logged out successfully" , "green")
 })
 

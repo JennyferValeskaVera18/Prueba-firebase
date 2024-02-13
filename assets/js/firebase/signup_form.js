@@ -20,11 +20,14 @@ try {
     //Obtener las credenciales de forma asincrona
     const credentials = await createUserWithEmailAndPassword(auth, email, password);
     console.log(credentials);
-
+//OCULTAR MODAL
     const signupModal =document.getElementById("signup-modal");
     const modal = bootstrap.Modal.getInstance(signupModal);
+    signupForm.reset();
     modal.hide();
 }
+
+
 //Manejo de errores
 catch (error) {
     //console.log(error);
